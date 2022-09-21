@@ -1,0 +1,49 @@
+header > .cabecalho {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+  border-radius: 0px 0px 30px 30px;
+  background-color: #fdfcdc;
+  box-shadow: 23px 23px 46px #949494, -23px -23px 46px #ffffff;
+}
+header > .cabecalho > .img-geladon {
+  width: 5%;
+}
+header > .cabecalho > .nav > .sacola {
+  width: 30%;
+  height: 3%;
+  cursor: pointer;
+}
+
+header > .cabecalho h2 {
+  font-size: 2em;
+}
+header > .cabecalho > .nav {
+  display: flex;
+  gap: 4%;
+}
+header > .cabecalho > .nav > .botao-Adicionar {
+  border-radius: 10px;
+  background-color: #00c4d4;
+  border: solid 3px;
+  width: 70%;
+  height: 5vh;
+  padding: 0%;
+  margin-top: 7%;
+  font-family: "Rye", cursive;
+}
+/* Responsividade */
+@media (max-width: 800px) {
+  header > .cabecalho > .img-geladon {
+    width: 10%;
+  }
+  header > .cabecalho > .sacola {
+    width: 10%;
+    height: 10%;
+  }
+  header > .cabecalho h2 {
+    font-size: 1.5em;
+  }
+}

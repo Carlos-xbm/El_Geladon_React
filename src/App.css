@@ -1,0 +1,56 @@
+.box-modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fed9b74d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-container {
+  width: 30vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-modal > .modal-container > form > fieldset {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fdfcdc;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-container > form > fieldset > input {
+  font-family: "Rye", cursive;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}
+.modal-container > form > fieldset > .botao-modals {
+  background-color: #00c4d4;
+  border-radius: 10px;
+  font-family: "Rye", cursive;
+  cursor: pointer;
+}
+
+.modal-container > form > fieldset > .botao-box-fechar {
+  width: 30%;
+  border-radius: 10px;
+  font-family: "Rye", cursive;
+  background-color: #ef476f;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 920px) {
+  .modal-container {
+    width: 60vw;
+    height: 60vh;
+  }
+}
