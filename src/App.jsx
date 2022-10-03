@@ -9,7 +9,7 @@ function App() {
   const [iceCream, setIceCream] = useState([]);
 
   const getIceCream = async () => {
-    const response = await fetch(`https://api-el-geladon-xbm.herokuapp.com/paletas/listar-todas/`);
+    const response = await fetch(`https://apielgeladon.herokuapp.com/paletas/listar-todas/`);
 
     const iceCreamList = await response.json();
 
