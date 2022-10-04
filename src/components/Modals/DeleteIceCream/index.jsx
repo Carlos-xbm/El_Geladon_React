@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 const ModalDeleteIceCream = ({ closeModal, iceCream, getIceCream }) => {
   const handleDeleteIceCream = async () => {
     const response = await fetch(
-      `http://localhost:3001/paletas/delete-paleta/${iceCream._id}`,
+      `https://api-elgeladon-xbm.herokuapp.com/paletas/delete-paleta/${iceCream._id}`,
       {
         method: "Delete",
         mode: "cors",
