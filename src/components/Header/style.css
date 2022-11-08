@@ -3,7 +3,6 @@ header {
   justify-content: center;
 }
 header > .cabecalho {
-    width: 99%;
     display: flex;
     justify-content: center;
     align-items: center;
