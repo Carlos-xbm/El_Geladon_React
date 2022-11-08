@@ -6,29 +6,33 @@ import { Toaster } from "react-hot-toast";
 import { useState, useEffect } from "react";
 
 function App() {
-  const [iceCream, setIceCream] = useState([]);
+    const [iceCream, setIceCream] = useState([]);
 
-  const getIceCream = async () => {
-    const response = await fetch(`https://api-elgeladon-xbm.herokuapp.com/paletas/all-paletas`);
+    const getIceCream = async () => {
+        const response = await fetch(
+            `https://api-elgeladon-xbm.herokuapp.com/paletas/all-paletas`
+        );
 
-    const iceCreamList = await response.json();
+        const iceCreamList = await response.json();
 
-    console.log("fez requisição");
-    setIceCream(iceCreamList);
-  };
+        console.log("fez requisição");
+        setIceCream(iceCreamList);
+    };
 
-  useEffect(() => {
-    getIceCream();
-  }, []);
+    useEffect(() => {
+        getIceCream();
+    }, []);
 
-  return (
-    <>
-      <Toaster />
-      <Header getIceCream={getIceCream} />
-      <Main iceCream={iceCream} getIceCream={getIceCream} />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <body>
+                <Toaster />
+                <Header getIceCream={getIceCream} />
+                <Main iceCream={iceCream} getIceCream={getIceCream} />
+                <Footer />
+            </body>
+        </>
+    );
 }
 
 export default App;
